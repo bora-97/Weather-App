@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora's Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    
+      <!--Bootstrap-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Personal Style sheet-->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+
+<body>
+  <header>
+      <div class="jumbotron-fluid" style="text-align:center;padding:50px;background-color:coral">
+        <div class="container">
+            <h1 class= "display-4" style="color:white">Weather Dashboard</h1>
+        </div> 
+
+      </div>
+  </header>
+  <section>
+      <div class='container'>
+          <div class='col-md-4'>
+              <p style='font-size: 30px;'>Search for a city</p>
+              <div class="input-group mb-3">
+
+              <input type="text" class="form-control" aria-describedat="basic-addon2">
+              <div class="input-group-append">
+                  <button id="SearchBtn" class="btn btn-outline-secondary" type="button">Search</button>
+
+              </div>
+                
+              </div>
+              <span id="error"></span>
+              <div class="history"></div>
+
+          </div>
+          <div class="col-md-6">
+              <div class="row mr-0">
+                  <div class="row mr-2">
+                      
+                    <div class="col-12 border border-dark m-3 rounded">
+                          
+                        <div class="row">
+                              <div class="col-12">
+                                 
+                                <span id="city-name" class="city-name align left"></span>
+                                  <img id="current-pic"  alt=""> 
+                              </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-12">
+                                       <p id="Temperature"></p>
+
+            
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-16">
+                                  <p id="windspeed"></p>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-12 d-flex">
+                                  <p id="UV-index"></p>
+
+                              </div>
+                          </div>
+        
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-16">
+                          <h3>7 Day Forecast</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col forecast bg-secondary text-blue ml-3 mb-3 rounded"></div>
+                      <div class="col forecast bg-secondary text-blue ml-3 mb-3 rounded"></div>
+                      <div class="col forecast bg-secondary text-blue ml-3 mb-3 rounded"></div>
+                      <div class="col forecast bg-secondary text-blue ml-3 mb-3 rounded"></div>
+                      <div class="col forecast bg-secondary text-blue ml-3 mb-3 rounded"></div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src=""></script>
+    
+</body>
+</html>
