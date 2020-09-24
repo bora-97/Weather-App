@@ -1,10 +1,22 @@
 h1 {
     font-size: 30px;
-    color: blue
+    color: white;
 }
 
 .col-md-8 span {
     font-size: 50px;
     color: blue;
 
+}
+
+.boras-class{
+    width: 25vw;
+    
+}
+
+.forecast-day{
+    width: 25vw;
+    border: 2px solid black;
+    height: 15vw;
+    margin: 0 2vw ;
 }
